@@ -10,13 +10,10 @@ int successor(bst_t *node)
 
 	if (node == NULL)
 		return (0);
-	else
-	{
-		left = successor(node->left);
-		if (left == 0)
-			return (node->n);
-		return (left);
-	}
+	left = successor(node->left);
+	if (left == 0)
+		return (node->n);
+	return (left);
 
 }
 /**
